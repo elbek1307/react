@@ -1,0 +1,11 @@
+:root{
+    --text-color: #837D88;
+    --maintext-color: #2C2830;
+    --back-color: #2D2641;
+}
+
+.container{
+    width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
