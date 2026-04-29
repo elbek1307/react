@@ -1,7 +1,15 @@
+
+
 :root{
     --text-color: #837D88;
     --maintext-color: #2C2830;
     --back-color: #2D2641;
+}
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
 }
 
 .container{
