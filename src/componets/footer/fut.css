@@ -15,6 +15,7 @@ footer .container{
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
+    gap: 40px;
 }
 
 .fut_top_box{
@@ -34,4 +35,37 @@ footer .container{
 
 .fut_hr{
     color: #DADADA;
+}
+
+.fut_bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+.fut_list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 24%;
+}
+
+
+.fut_bot_title{
+    color: var(--text-color);
+    font-size: 18px;
+    margin-bottom: 30px ;
+    cursor: pointer;
+}
+
+.fut_bot_link{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--maintext-color);
+}
+
+.fut_bot_link:hover{
+    color: var(--text-color);
 }
