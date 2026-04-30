@@ -1,0 +1,36 @@
+.find{
+    width: 100%;
+    padding: 100px 0;
+}
+
+.find .container{
+    background-image: url(./find_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 60px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.find_title{
+    font-size: 56px;
+    font-weight: 700;
+    color: white;
+
+}
+
+.find_btn{
+    padding: 10px 30px;
+    background: none;
+    border: solid 2px white;
+    color: white;
+    transition: all 0.3s;
+}
+
+.find_btn:hover{
+    background-color: white;
+    color: var(--back-color);
+}
