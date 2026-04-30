@@ -34,3 +34,17 @@
     background-color: white;
     color: var(--back-color);
 }
+
+
+@media (max-width: 1000px) {
+    .find .container{
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+        padding: 60px 40px;
+    }
+
+    .find_title{
+        font-size: 40px;
+    }
+}

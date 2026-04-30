@@ -55,6 +55,7 @@
   .dif_list {
     flex-direction: column;
     align-items: center;
+    gap: 50px;
   }
 
   .dif_item {
