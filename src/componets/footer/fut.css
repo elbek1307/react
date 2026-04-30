@@ -1,0 +1,37 @@
+footer{
+    background-image: url(./footer_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.fut_top{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.fut_top_box{
+    display: flex;
+    gap: 20px;
+}
+
+.fut_icon{
+  transition: all 0.3s;
+}
+
+.fut_icon:hover{
+    transform: translatey(-8px);
+    cursor: pointer;
+}
+
+
+.fut_hr{
+    color: #DADADA;
+}
