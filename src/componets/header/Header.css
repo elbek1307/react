@@ -45,3 +45,10 @@ nav .container{
     background-color: var(--maintext-color);
     color: white;
 }
+
+
+@media (max-width: 768px) {
+    .nav_list{
+        display: none;
+    }
+}
