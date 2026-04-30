@@ -11,7 +11,7 @@ function Footer() {
     <footer>
       <div className="container">
         <div className="fut_top">
-          <img src={logoFoot} alt="logo" />
+          <img src={logoFoot} alt="logo" className="fut_logo" />
           <div className="fut_top_box">
             <img src={facebook} alt="" className="fut_icon" />
             <img src={twiter} alt="" className="fut_icon" />
