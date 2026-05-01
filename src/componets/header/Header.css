@@ -17,14 +17,32 @@ nav .container{
 
 .nav_list{
     display: flex;
-    gap: 2px;
+    gap: 6px;
     align-items: center;
 }
 
-.nav_item{
+.nav_item {
     text-decoration: none;
     padding: 5px;
     color: var(--text-color);
+    position: relative;
+}
+
+.nav_item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-color);
+    transition: all 0.3s;
+}
+
+.nav_item:hover::after{
+    width: 100%;
+    right: auto;
+    left: 0;
 }
 
 .nav_item:hover{
