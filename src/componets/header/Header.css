@@ -9,6 +9,16 @@ nav .container{
     align-items: center;
 }
 
+.nav_logo{
+     width: 112px;
+     transition: all 0.3s;
+}
+
+.nav_logo:hover{
+    transform: translateY(-4px);
+    cursor: pointer;
+}
+
 .nav_box{
     display: flex;
     align-items: center;
