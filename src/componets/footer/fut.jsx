@@ -13,10 +13,10 @@ function Footer() {
         <div className="fut_top">
           <img src={logoFoot} alt="logo" className="fut_logo" />
           <div className="fut_top_box">
-            <img src={facebook} alt="" className="fut_icon" />
-            <img src={twiter} alt="" className="fut_icon" />
-            <img src={pinter} alt="" className="fut_icon" />
-            <img src={insta} alt="" className="fut_icon" />
+            <a target="blank" href="https://www.facebook.com/"><img src={facebook} alt="facebook" className="fut_icon" /></a>
+            <a href="https://x.com/" target="blank"><img src={twiter} alt="twiiter" className="fut_icon" /></a>
+            <a href="https://www.pinterest.com/" target="blank"><img src={pinter} alt="pinterest" className="fut_icon" /></a>
+           <a href="https://www.instagram.com/?hl=en" target="blank"> <img src={insta} alt="instagram" className="fut_icon" /></a>
           </div>
         </div>
         <hr className="fut_hr" />
