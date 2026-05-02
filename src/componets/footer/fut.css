@@ -28,11 +28,11 @@ footer .container{
 }
 
 .fut_icon{
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 .fut_icon:hover{
-    transform: translatey(-8px);
+    transform: translatey(-10px);
     cursor: pointer;
 }
 
@@ -70,6 +70,8 @@ footer .container{
     font-weight: 600;
     color: var(--maintext-color);
 }
+
+
 
 .fut_bot_link:hover{
     color: var(--text-color);
