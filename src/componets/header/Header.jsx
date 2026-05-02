@@ -7,13 +7,13 @@ function Header(){
     <>
     <nav>
       <div className="container">
-       <a href=""> <img src={logo} alt="" className="nav_logo" /></a>
+       <a href="#"> <img src={logo} alt="sie logo" className="nav_logo" /></a>
 
         <div className="nav_box">
           <div className="nav_list">
-           <a href="" className="nav_item">HOW WE WORK</a>
-           <a href="" className="nav_item">BLOG</a>
-           <a href="" className="nav_item">ACCOUNT</a>
+           <a href="#" className="nav_item">HOW WE WORK</a>
+           <a href="#" className="nav_item">BLOG</a>
+           <a href="#" className="nav_item">ACCOUNT</a>
           </div>
 
           <button className="nav_btn">VIEW PLANS</button>
