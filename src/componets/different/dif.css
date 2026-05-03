@@ -346,3 +346,18 @@
   position: absolute;
   right: 0;
 }
+
+
+
+media (max-width: 900px) {
+  .most_list .most_item {
+    width: 48%;
+  }
+  .nat_list {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nat_list .nat_item {
+    text-align: center;
+  }
+}
