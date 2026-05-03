@@ -268,3 +268,81 @@
   background-color: white;
   transition: all ease-in 0.2s;
 }
+
+
+
+.foot_logo:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+.foot_logo h2 {
+  font-size: 28px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.foot_list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.foot_list .foot_item {
+  padding: 5px;
+  color: #ffffff;
+  position: relative;
+}
+.foot_list .foot_item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: white;
+  transition: all ease-in 0.2s;
+}
+.foot_list .foot_item:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+.nav_list_menu {
+  list-style: none;
+  z-index: 999;
+  background-color: white;
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  display: none;
+  background-color: rgba(149, 143, 143, 0.3058823529);
+  backdrop-filter: blur(10px);
+}
+
+.nav_item_menu {
+  padding: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  margin-top: 20px;
+}
+
+.nav_item_menu--first {
+  margin-top: 70px;
+}
+
+.nav_menu_remove {
+  width: 45px;
+  height: 45px;
+  fill: #e63946;
+  position: absolute;
+  right: 0;
+}
