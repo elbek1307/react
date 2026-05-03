@@ -401,3 +401,54 @@
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
+
+
+
+
+.most_list .most_item p {
+  color: #768088;
+  margin-top: 10px;
+  margin-top: 20px;
+}
+.most_list .most_item:hover {
+  transform: translateY(-20px);
+  cursor: pointer;
+}
+
+.most_item_box {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top: 5px solid #f7f7f7;
+  padding: 15px 0;
+}
+.most_item_box .most_info_date {
+  margin-left: auto;
+}
+
+.footer {
+  width: 100%;
+  background-image: url(img/orqa.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.stay {
+  padding-top: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.stay h2 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 34px;
+  padding: 8px 4px;
+  border-bottom: white 2px solid;
+  letter-spacing: 2px;
+}
