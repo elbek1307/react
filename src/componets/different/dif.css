@@ -386,3 +386,18 @@
     display: block;
   }
 }
+
+
+
+@media (max-width: 500px) {
+  .foot_link .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .foot_email_box {
+    flex-direction: column;
+  }
+  .foot_email_box input {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
