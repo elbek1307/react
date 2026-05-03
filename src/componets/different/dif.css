@@ -349,7 +349,7 @@
 
 
 
-media (max-width: 900px) {
+@media (max-width: 900px) {
   .most_list .most_item {
     width: 48%;
   }
@@ -359,5 +359,30 @@ media (max-width: 900px) {
   }
   .nat_list .nat_item {
     text-align: center;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .nav_list {
+    display: none;
+  }
+  .hero {
+    text-align: center;
+  }
+  .feat_box {
+    flex-wrap: wrap;
+  }
+  .feat_box .feat_road {
+    width: 100%;
+  }
+  .feat_box .feat_down {
+    width: 100%;
+  }
+  .most_list .most_item {
+    width: 100%;
+  }
+  .nav_menu {
+    display: block;
   }
 }
