@@ -20,17 +20,20 @@ function Header(){
           <div className="nav_list">
            <a href="#" className="nav_item">HOW WE WORK</a>
            <a href="#" className="nav_item">BLOG</a>
-           <a href="#" className="nav_item" onClick={()=> setmodal(true)}>ACCOUNT</a>
+           <a href="#" className="nav_item" onClick={()=> setmodal(!modal)}>ACCOUNT</a>
+            
           </div>
 
           <button className="nav_btn">VIEW PLANS</button>
 
-          {modal && (
-            <div className="mod_back">
-              but
+
+            {modal && (
+              <div className="mod_back">
+              < IoMdExit className='mod_exit' onClick={()=> setmodal(false)}/>
             </div>
           )}
         </div>
+        
       </div>
     </nav>
     
