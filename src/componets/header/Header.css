@@ -88,11 +88,24 @@ nav .container {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
   gap: 20px;
-  transition: all 3s;
+  z-index: 99;
+
+  animation: modback 2s ease;
 }
 
+@keyframes modback {
+  from {
+    top: -100%;
+    opacity: 0;
+  }
+
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
 .mod_exit{
     width: 40px;
     height: 40px;

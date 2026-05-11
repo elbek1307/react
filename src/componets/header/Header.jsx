@@ -74,10 +74,10 @@ function Header() {
 
                 <form className="form" onSubmit={sendMessege}>
                   <label htmlFor="name">Login: {ism || setism}</label>
-                  <input type="text" id="name" placeholder="Login" onChange={(event)=>setism(event.target.value)} />
+                  <input type="text" id="name" placeholder="Login" onChange={(event)=>setism(event.target.value)} required />
 
                   <label htmlFor="parol">Password: {parol || setparol}</label>
-                  <input type="password" id="parol" placeholder="Password" onChange={(event)=> setparol(event.target.value)} />
+                  <input type="password" id="parol" placeholder="Password" onChange={(event)=> setparol(event.target.value)} required />
 
                   <button type="submit" className="mod_btn">Send</button>
                 </form>
