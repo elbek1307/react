@@ -8,6 +8,8 @@ import axios from "axios";
 
 function Header() {
   const [modal, setmodal] = useState(false);
+  const [ism, setism] = useState("")
+  const [parol, setparol] = useState("")
 
   const sendMessege = (event)=>{
     event.preventDefault();
@@ -71,11 +73,11 @@ function Header() {
                 />
 
                 <form className="form" onSubmit={sendMessege}>
-                  <label htmlFor="name">Login</label>
-                  <input type="text" id="name" placeholder="Login" />
+                  <label htmlFor="name">Login: {ism || setism}</label>
+                  <input type="text" id="name" placeholder="Login" onChange={(event)=>setism(event.target.value)} />
 
-                  <label htmlFor="parol">Password</label>
-                  <input type="password" id="parol" placeholder="Password" />
+                  <label htmlFor="parol">Password: {parol || setparol}</label>
+                  <input type="password" id="parol" placeholder="Password" onChange={(event)=> setparol(event.target.value)} />
 
                   <button type="submit" className="mod_btn">Send</button>
                 </form>
